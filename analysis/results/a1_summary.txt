@@ -1,0 +1,5 @@
+N=3 requests=10000 errors=0
+Server 1: 4091
+Server 2: 4496
+Server 3: 1413
+mean=3333.3 pstdev=1367.9 coeff_of_variation=0.410

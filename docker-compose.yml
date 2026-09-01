@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  load_balancer:
+    build: ./load_balancer
+    image: ds_lb_loadbalancer:latest
+    container_name: load_balancer
+    ports:
+      - "5000:5000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    privileged: true
+    networks:
+      net1:
+        aliases:
+          - load_balancer
+    environment:
+      LB_MODE: docker
+      N: "3"
+      NUM_SLOTS: "512"
+      NUM_VIRTUAL: "9"
+      HEARTBEAT_INTERVAL: "4"
+      HEARTBEAT_TIMEOUT: "2"
+    depends_on: []
+
+networks:
+  net1:
+    driver: bridge
+    name: net1

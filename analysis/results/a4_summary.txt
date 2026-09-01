@@ -1,0 +1,4 @@
+[default (assignment)] A-1 N=3 counts=[4488, 4098, 1414] cv=0.410
+[multiplicative (Knuth)] A-1 N=3 counts=[5803, 2767, 1430] cv=0.549
+[default (assignment)] A-2 cv-by-N: [(2, 0.072), (3, 0.405), (4, 0.566), (5, 0.55), (6, 0.649)]
+[multiplicative (Knuth)] A-2 cv-by-N: [(2, 0.197), (3, 0.553), (4, 0.4), (5, 0.226), (6, 0.257)]
