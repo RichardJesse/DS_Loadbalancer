@@ -125,7 +125,7 @@ curl -X DELETE http://localhost:5000/rm -H "Content-Type: application/json" \
 Kill a replica to see it get replaced: `docker kill <name>`, then poll
 `curl http://localhost:5000/rep`.
 
-## 5. Running it locally without Docker (development / this submission's test environment)
+## 5. Running it locally without Docker (development)
 
 ```bash
 pip install -r load_balancer/requirements.txt -r server/requirements.txt -r analysis/requirements.txt
